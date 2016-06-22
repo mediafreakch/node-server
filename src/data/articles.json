@@ -1,0 +1,48 @@
+{
+  "articles": [{
+    "ArticleId": 800078726,
+    "CategoryId": 39847,
+    "IsAuction": false,
+    "IsBuyNow": true,
+    "Title": "KABEL ROLLE",
+    "PictureUrl": "https://pics.ricardostatic.ch/2_800078726/elektromaterial/kabel-rolle.jpg",
+    "Price": 70,
+    "BuyNowPrice": 70,
+    "Url": "https://www.ricardo.ch/kaufen/handwerk-und-garten/elektromaterial/kabel/kabel-rolle/v/an800078726/",
+    "BidsCount": 0
+  }, {
+    "ArticleId": 835543874,
+    "CategoryId": 39847,
+    "IsAuction": true,
+    "IsBuyNow": false,
+    "Title": "Rohre, Installationsdraht, Kabel NEU",
+    "PictureUrl": "https://pics.ricardostatic.ch/2_835543874/elektromaterial/rohre-installationsdraht-kabel-neu.jpg",
+    "Price": 1.5,
+    "BuyNowPrice": 0,
+    "Url": "https://www.ricardo.ch/kaufen/handwerk-und-garten/elektromaterial/kabel/rohre-installationsdraht-kabel-neu/v/an835543874/",
+    "BidsCount": 1
+  }, {
+    "ArticleId": 831990000,
+    "CategoryId": 39847,
+    "IsAuction": false,
+    "IsBuyNow": false,
+    "Title": "Starkstrom Kabel Stromkabel",
+    "PictureUrl": "https://pics.ricardostatic.ch/2_831990000/elektromaterial/starkstrom-kabel-stromkabel.jpg",
+    "Price": 30,
+    "BuyNowPrice": 60,
+    "Url": "https://www.ricardo.ch/kaufen/handwerk-und-garten/elektromaterial/kabel/starkstrom-kabel-stromkabel/v/an831990000/",
+    "BidsCount": 0
+  }, {
+    "ArticleId": 805425716,
+    "CategoryId": 39847,
+    "IsAuction": false,
+    "IsBuyNow": false,
+    "Title": "Cinch Kabel für Tatöwiermaschine",
+    "PictureUrl": "https://pics.ricardostatic.ch/2_805425716/elektromaterial/cinch-kabel-fuer-tatoewiermaschine.jpg",
+    "Price": 15,
+    "BuyNowPrice": 25,
+    "Url": "https://www.ricardo.ch/kaufen/handwerk-und-garten/elektromaterial/kabel/cinch-kabel-fuer-tatoewiermaschine/v/an805425716/",
+    "BidsCount": 0
+  }],
+  "algorithm": "LastPDP"
+}
