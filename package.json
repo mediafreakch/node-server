@@ -1,7 +1,7 @@
 {
   "name": "kungfu-panda",
   "version": "0.0.1",
-  "description": "",
+  "description": "A test project for applicants to perform some tasks",
   "main": "src/index.js",
   "scripts": {
     "build": "browserify src/index.js > dist/build.js",
