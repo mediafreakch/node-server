@@ -43,6 +43,94 @@
     "BuyNowPrice": 25,
     "Url": "https://www.ricardo.ch/kaufen/handwerk-und-garten/elektromaterial/kabel/cinch-kabel-fuer-tatoewiermaschine/v/an805425716/",
     "BidsCount": 0
+  }, {
+    "ArticleId": 765330542,
+    "CategoryId": 40459,
+    "IsAuction": false,
+    "IsBuyNow": true,
+    "Title": "Bett MDF Aluminium Bed",
+    "PictureUrl": "https://pics.ricardostatic.ch/2_765330542/schlafzimmer/bett-mdf-aluminium-bed.jpg",
+    "Price": 1400,
+    "BuyNowPrice": 1400,
+    "Url": "https://www.ricardo.ch/kaufen/haushalt-und-wohnen/schlafzimmer/betten-und-matratzen/betten/140-cm-und-breiter/bett-mdf-aluminium-bed/v/an765330542/",
+    "BidsCount": 0
+  }, {
+    "ArticleId": 828064392,
+    "CategoryId": 40459,
+    "IsAuction": false,
+    "IsBuyNow": true,
+    "Title": "Bett Biker Bed Harley-Davidson Style",
+    "PictureUrl": "https://pics.ricardostatic.ch/2_828064392/schlafzimmer/bett-biker-bed-harley-davidson-style.jpg",
+    "Price": 7500,
+    "BuyNowPrice": 7500,
+    "Url": "https://www.ricardo.ch/kaufen/haushalt-und-wohnen/schlafzimmer/betten-und-matratzen/betten/140-cm-und-breiter/bett-biker-bed-harley-davidson-style/v/an828064392/",
+    "BidsCount": 0
+  }, {
+    "ArticleId": 834958414,
+    "CategoryId": 40459,
+    "IsAuction": true,
+    "IsBuyNow": false,
+    "Title": "Bett",
+    "PictureUrl": "https://pics.ricardostatic.ch/2_834958414/schlafzimmer/bett.jpg",
+    "Price": 119,
+    "BuyNowPrice": 0,
+    "Url": "https://www.ricardo.ch/kaufen/haushalt-und-wohnen/schlafzimmer/betten-und-matratzen/betten/140-cm-und-breiter/bett/v/an834958414/",
+    "BidsCount": 0
+  }, {
+    "ArticleId": 817538694,
+    "CategoryId": 40459,
+    "IsAuction": false,
+    "IsBuyNow": true,
+    "Title": "Bett   Liegefläche: 180x200",
+    "PictureUrl": "https://pics.ricardostatic.ch/2_817538694/schlafzimmer/bett-liegeflaeche-180x200.jpg",
+    "Price": 1099,
+    "BuyNowPrice": 1099,
+    "Url": "https://www.ricardo.ch/kaufen/haushalt-und-wohnen/schlafzimmer/betten-und-matratzen/betten/140-cm-und-breiter/bett-liegeflaeche-180x200/v/an817538694/",
+    "BidsCount": 0
+  }, {
+    "ArticleId": 834747548,
+    "CategoryId": 49541,
+    "IsAuction": false,
+    "IsBuyNow": false,
+    "Title": "Sammlerstück: LONGINES 18K Gelbgold",
+    "PictureUrl": "https://pics.ricardostatic.ch/2_834747548/markenuhren/sammlerstueck-longines-18k-gelbgold.jpg",
+    "Price": 463,
+    "BuyNowPrice": 2200,
+    "Url": "https://www.ricardo.ch/kaufen/uhren-und-schmuck/markenuhren/longines/sammlerstueck-longines-18k-gelbgold/v/an834747548/",
+    "BidsCount": 88
+  }, {
+    "ArticleId": 834970186,
+    "CategoryId": 49541,
+    "IsAuction": false,
+    "IsBuyNow": true,
+    "Title": "LONGINES 18K Gold Damenührli (2071)",
+    "PictureUrl": "https://pics.ricardostatic.ch/2_834970186/markenuhren/longines-18k-gold-damenuehrli-2071.jpg",
+    "Price": 450,
+    "BuyNowPrice": 450,
+    "Url": "https://www.ricardo.ch/kaufen/uhren-und-schmuck/markenuhren/longines/longines-18k-gold-damenuehrli-2071/v/an834970186/",
+    "BidsCount": 0
+  }, {
+    "ArticleId": 826653504,
+    "CategoryId": 49541,
+    "IsAuction": false,
+    "IsBuyNow": true,
+    "Title": "LONGINES Prestige 18K Gelb Gold (2058)",
+    "PictureUrl": "https://pics.ricardostatic.ch/2_826653504/markenuhren/longines-prestige-18k-gelb-gold-2058.jpg",
+    "Price": 2500,
+    "BuyNowPrice": 2500,
+    "Url": "https://www.ricardo.ch/kaufen/uhren-und-schmuck/markenuhren/longines/longines-prestige-18k-gelb-gold-2058/v/an826653504/",
+    "BidsCount": 0
+  }, {
+    "ArticleId": 757738590,
+    "CategoryId": 49541,
+    "IsAuction": false,
+    "IsBuyNow": true,
+    "Title": "Longines Vintage 18K Gold Armbanduhr",
+    "PictureUrl": "https://pics.ricardostatic.ch/2_757738590/markenuhren/longines-vintage-18k-gold-armbanduhr.jpg",
+    "Price": 890,
+    "BuyNowPrice": 890,
+    "Url": "https://www.ricardo.ch/kaufen/uhren-und-schmuck/markenuhren/longines/longines-vintage-18k-gold-armbanduhr/v/an757738590/",
+    "BidsCount": 0
   }],
   "algorithm": "LastPDP"
 }
