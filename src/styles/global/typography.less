@@ -4,7 +4,44 @@
         Typography
  ******************************/
 
-@default-font-size:               14px;
+@default-font-face: {
+
+  @font-face {
+    font-family: 'MetaOT';
+    src: url('//pics.ricardostatic.ch/assets/MetaWeb-Book.7400d0f8.eot?#iefix') format('embedded-opentype'),
+    url('//pics.ricardostatic.ch/assets/MetaWeb-Book.80e4c456.woff') format('woff'),
+    url('//pics.ricardostatic.ch/assets/MetaWeb-Book.e0d72ff7.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'MetaOT';
+    src: url('//pics.ricardostatic.ch/assets/MetaWeb-Bold.e8751075.eot?#iefix') format('embedded-opentype'),
+    url('//pics.ricardostatic.ch/assets/MetaWeb-Bold.eabf37b3.woff') format('woff'),
+    url('//pics.ricardostatic.ch/assets/MetaWeb-Bold.30c37ea3.ttf') format('truetype');
+    font-weight: bold;
+  }
+
+  @font-face {
+    font-family: 'ricardo-icon-font';
+    src: url("//pics.ricardostatic.ch/assets/ricardo-icon-font.27b1e256.eot?#iefix") format("embedded-opentype"),
+    url("//pics.ricardostatic.ch/assets/ricardo-icon-font.53191d8f.woff") format("woff"),
+    url("//pics.ricardostatic.ch/assets/ricardo-icon-font.31eb3649.ttf") format("truetype");
+  }
+
+};
+
+@default-font-family: MetaOT, sans-serif;
+
+@root-font-size-xs: 14px;
+@root-font-size-ms: 14px;
+@root-font-size-sm: 14px;
+@root-font-size-md: 14px;
+@root-font-size-lg: 14px;
+@default-font-size: 1rem;
+@default-font-size-small: 0.8571428571rem;
+@default-font-size-xsmall: 0.7142857143rem;
+@default-font-size-large: 1.3571428571rem;
+
 @default-font-color:              @color-grey-10;
 @default-line-height-factor:      1.5;
 @default-headline-height-factor:  1.2;
