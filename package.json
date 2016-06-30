@@ -7,7 +7,7 @@
     "build": "browserify src/index.js > dist/build.js",
     "watch": "watchify -v -d src/index.js -o dist/build.js",
     "start": "node server.js",
-    "pretest": "npm run build",
+    "postinstall": "npm run build",
     "test": "echo \"No test specified. Continue anyway\" && exit 0"
   },
   "license": "MIT",

@@ -16,4 +16,4 @@ To enable logs, set `DEBUG` environment variable: `DEBUG=* npm start`.
 
 # Test
 
-To run the tests, run `npm test`. It will automatically build the project upfront.
+To run the tests, run `npm test`.
