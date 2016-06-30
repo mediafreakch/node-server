@@ -9,13 +9,11 @@ After cloning the repository, open a command line, go to directory you cloned th
 
 During development use `npm run watch` (once) to build the project and start watching for changes.
 
-`npm run serve` will start a local webserver on `http://localhost:8085` so that you can preview your changes.
+`npm start` will start a local webserver on `http://localhost:3000` so that you can preview your changes.
+If you want a different port, set an environment variable `PORT`: `PORT=5000 npm start`.
 
-# Task
+To enable logs, set `DEBUG` environment variable: `DEBUG=* npm start`.
 
-You are now ready to work on your task. To make things easier for you, we have prepared:
+# Test
 
-- Basic layout (header & footer), text, list and grid CSS classes (see `src/node_modules/page~global/styles/`)
-- LESS variables you can re-use (`/src/styles/global/`)
-- Boilerplate package for the article component (`src/node_modules/component~article`)
-- Icon classes you can use (`src/node_modules/page~global/styles/icons.less`)
+To run the tests, run `npm test`. It will automatically build the project upfront.

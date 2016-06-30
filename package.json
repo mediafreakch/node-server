@@ -6,12 +6,14 @@
   "scripts": {
     "build": "browserify src/index.js > dist/build.js",
     "watch": "watchify -v -d src/index.js -o dist/build.js",
-    "serve": "http-server ./ -p 8085",
-    "start": "npm run build && npm run serve"
+    "start": "node server.js",
+    "pretest": "npm run build",
+    "test": "echo \"No test specified. Continue anyway\" && exit 0"
   },
   "license": "MIT",
   "dependencies": {
-    "http-server": "^0.9.0",
+    "debug": "^2.2.0",
+    "express": "^4.14.0",
     "vue": "^1.0.24"
   },
   "devDependencies": {
