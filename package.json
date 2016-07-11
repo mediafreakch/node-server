@@ -9,7 +9,7 @@
     "revision": "nf run node ./revision.js",
     "release": "npm run clean && npm run build && npm run revision",
     "watch": "watchify -v -d src/index.js -o dist/build.js",
-    "start": "nf start",
+    "start": "npm run revision && nf start",
     "postinstall": "if [ $BUILD_AFTER_INSTALL ]; then npm run build; fi",
     "test": "echo \"No test specified. Continue anyway\" && exit 0"
   },
