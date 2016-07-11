@@ -4,7 +4,7 @@
   "description": "A test project for applicants to perform some tasks",
   "main": "src/index.js",
   "scripts": {
-    "clean": "rimraf dist/*",
+    "clean": "rimraf 'dist/!(.*)'",
     "build": "browserify -r dotenv/config -e src/index.js | uglifyjs -c warnings=false -m > dist/build.js",
     "revision": "nf run node ./revision.js",
     "release": "npm run clean && npm run build && npm run revision",
