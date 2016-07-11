@@ -4,3 +4,4 @@ dist/*
 !.gitkeep
 .idea/
 npm-debug*
+.env
