@@ -14,6 +14,8 @@ If you want a different port, set an environment variable `PORT`: `PORT=5000 npm
 
 To enable logs, set `DEBUG` environment variable: `DEBUG=* npm start`.
 
+You can put all your environment variables into a `.env` file.
+
 # Test
 
 To run the tests, run `npm test`.
