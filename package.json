@@ -6,10 +6,10 @@
   "scripts": {
     "clean": "rimraf dist/*",
     "build": "browserify -r dotenv/config -e src/index.js | uglifyjs -c warnings=false -m > dist/build.js",
-    "revision": "node -r dotenv/config ./revision.js",
-    "release": "npm run clean && npm run compile && npm run revision",
+    "revision": "nf run node ./revision.js",
+    "release": "npm run clean && npm run build && npm run revision",
     "watch": "watchify -v -d src/index.js -o dist/build.js",
-    "start": "node -r dotenv/config server.js",
+    "start": "nf start",
     "postinstall": "if [ $BUILD_AFTER_INSTALL ]; then npm run build; fi",
     "test": "echo \"No test specified. Continue anyway\" && exit 0"
   },
@@ -17,6 +17,7 @@
   "dependencies": {
     "debug": "^2.2.0",
     "express": "^4.14.0",
+    "foreman": "^1.4.1",
     "jade": "^1.11.0",
     "throng": "^4.0.0",
     "vue": "^1.0.24"
