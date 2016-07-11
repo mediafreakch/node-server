@@ -2,6 +2,7 @@ var throng = require('throng');
 
 var WORKERS = process.env.WEB_CONCURRENCY || 1;
 var PORT = process.env.SERVER_PORT || 3000;
+var RELEASE_DIR = process.env.NODE_ENV === 'production' ? 'cdn' : 'dist';
 
 // app clustering
 throng({
@@ -18,10 +19,10 @@ function startServer() {
       app = express();
 
   // precompile main template before any route hits
-  var mainTemplate = jade.compileFile(path.join(__dirname, 'dist', 'index.jade'));
+  var mainTemplate = jade.compileFile(path.join(__dirname, RELEASE_DIR, 'index.jade'));
 
   app
-    .use('/dist', express.static('./dist'))
+    .use('/' + RELEASE_DIR, express.static('./' + RELEASE_DIR))
     .get('/', homeRoute)
     .listen(PORT, onListen);
 

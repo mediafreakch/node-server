@@ -10,6 +10,9 @@ var gulp = require('gulp'),
       fileNameManifest: 'cdn-manifest.json',
       dontRenameFile: [ /^.*\/index\.jade$/g ],
       prefix: CDN_BASE_PATH,
+      transformPath: function(rev, src, path) {
+        return NODE_ENV === 'production' ? rev.replace('dist', 'cdn') : rev;
+      },
       debug: DEBUG
     });
 
@@ -18,9 +21,9 @@ if (NODE_ENV === 'production') {
   gulp.src(['dist/**', 'src/index.jade'])
     .pipe(rev.revision())
     .pipe(flatten())
-    .pipe(gulp.dest('dist'))
+    .pipe(gulp.dest('cdn'))
     .pipe(rev.manifestFile())
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest('cdn'));
 } else {
   // during development, we want watchify to do it's thing,
   // so we don't replace references.
