@@ -1,3 +1,20 @@
 language: node_js
 node_js:
   - "6"
+env:
+  - ELASTIC_BEANSTALK_LABEL=$TRAVIS_COMMIT
+before_deploy:
+  - node eb_package.js
+deploy:
+  edge: true
+  skip_cleanup: true
+  provider: elasticbeanstalk
+  access-key-id:
+    secure: "ULdhtXnWnT3xx+xuqoHFj9UVNwx+SIHAeOo9R21cd1EZD8b3pDuctsywd2pQvGPlGJhLBVPw0UmERD/W0rLFg6yg82AfRSFKW6qyC4btKxyTzx66035o66uZH6/1ntI3xUDIHB60Fd5bMuj0TeG5F9sz35ojIcGXmDbHtmmmT9oLRoxwP1iqv7QR6NvhUUv/dXAl29BbEAVon0Hin2RvxmzgMAiJrlhOgaczw8LHkvOgt4H3w1KJ9gpgVMSiNNRtzs2/9UQ7ECORsAeoXq8dylus7SI9E58TlBoJGiIM5R5tyI6VGebVUYZ1dBc06gj+gKVgTMPTLqslYi4khYfLxejvEUyHyYI3gjH3VKH/DlIwvkcOoaJ3hIOWGSYAruf2oGcx11Oguc2nPwBadjw7wFWt/LWUCwdW1sq4eQuHxhiuO9n7ld76o6OOQ+9rWV/5fjv+SZpIq9hY2/Gbbdi21Xp5vu1oh1bjagDFfzRvy8zc2+ZeyCMfeKMg6b/Rx/RFNSiNhqFp46CnBZXHxlg9qEiLGvhEw79KY/XnunzO9CwfdmMR+4/izfWibZgG/ay4OiMri/HkQ5Le6rUN79gLgiu29f19kWdAplDNF2fr9tW4Tg7Xqmh9G2E9b/NgwCawva/qwx3mVQ93MN0LcJmb6BpdUI7IXrRemZUs5/l6mrU="
+  secret-access-key:
+    secure: "KGP80xglyJNwJXf8cCLJbu6X7mA+5LMUgZ0CaUYtrzKTK+Xtgrf5QtUTyykAnoG46u82oT7FkP7PuH+RQJZZYjMT0nMzTm0XAKCR6U7Rqq5ldO0GMq95hrLyKDg4AfH3Xws3X8c/53S6rw+30V3xk4A9mcP4MRbcfVPYWXFZhx0IsYYPij+2inYgAIinRHVY+ETj5I6bPoqbeSPcFBxL/ydjLBB62e+q90lAX6CzG5PvFqFCIfWWW6kLyU5eXrl7ePCtLgjYv3GSa7dQksVP/2ClmKrezu+SK6iuRg4QH77D0toTs7rc0/Agl1W3L+PQJdN5IT1ofQxZk1Mywjl8HJing2ZNuh7TCERNZS7UJntPHZXkE705Z0UhfASIPCZRfdgRBhWeczHaxHOrM0l43KZl9farHeaxTwDBkoKcJ+ex7MHvWst/+TfFsgiyFYWCivSVHy31DdHKe622H5HPzd+VuMov7FmIhHoHmC1yczJIZcZL6XQu5KTrIgr15HqmD14f9p3XACjsvVIDFDpDixyc717lJS8izEeW5cuQWgSa+Tlkc9rllcSz1gAAW1iN8knTAsM6asbJE+xyi3X6hipCgsRVEGZfP0bxxMIUFQKk4heQ0W1CSctP3dUN7KJRHqJebpLZX2hO7bZbDJXzUQCUvwG1fk7be+L8f0rORg4="
+  region: eu-west-1
+  app: frontend-prototyping
+  env: frontend-prototyping-beta-ricardo
+  on:
+    branch: master
