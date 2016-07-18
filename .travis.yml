@@ -6,7 +6,7 @@ env:
 before_deploy:
   - rm -r node_modules
   - NODE_ENV=production npm install
-  - sed -i '' 's/\/node_modules//g' .gitignore
+  - sed -i 's/\/node_modules//g' .gitignore
   - git add node_modules/
 deploy:
   edge: true
