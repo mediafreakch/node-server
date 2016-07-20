@@ -14,7 +14,7 @@ deploy:
   access-key-id: $AWS_KEY_PLAIN
   secret-access-key: $AWS_TOKEN_PLAIN
   region: eu-west-1
-  app: frontend-prototyping
+  app: frontend-prototyping-beta-ricardo
   env: frontend-prototyping-beta-ricardo
   bucket_name: s3://elasticbeanstalk-eu-west-1-082666575234
   on:
