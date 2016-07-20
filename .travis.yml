@@ -16,5 +16,6 @@ deploy:
   region: eu-west-1
   app: frontend-prototyping
   env: frontend-prototyping-beta-ricardo
+  bucket_name: s3://elasticbeanstalk-eu-west-1-082666575234
   on:
     branch: master
