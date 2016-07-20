@@ -12,8 +12,8 @@ deploy:
   edge: true
   skip_cleanup: true
   provider: elasticbeanstalk
-  access-key-id: $access-key-id
-  secret-access-key: $security-token
+  access-key-id: $AWS-KEY-ID
+  secret-access-key: $AWS-SEC-TOKEN
   region: eu-west-1
   app: frontend-prototyping
   env: frontend-prototyping-beta-ricardo
