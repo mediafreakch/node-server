@@ -1,4 +1,3 @@
-group: edge
 language: node_js
 node_js:
   - "6"
@@ -10,7 +9,6 @@ before_deploy:
   - sed -i 's/\/node_modules//g' .gitignore
   - git add node_modules/
 deploy:
-  edge: true
   skip_cleanup: true
   provider: elasticbeanstalk
   access-key-id:
