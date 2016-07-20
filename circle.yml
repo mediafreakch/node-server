@@ -1,0 +1,13 @@
+dependencies:
+  pre:
+    - sudo pip install awsebcli --force-reinstall
+deployment:
+  pre:
+    - rm -r node_modules
+    - NODE_ENV=production npm install
+    - sed -i 's/\/node_modules//g' .gitignore
+    - git add node_modules/
+  beta:
+    branch: master
+    commands:
+      - eb deploy --profile default
