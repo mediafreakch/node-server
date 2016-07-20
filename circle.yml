@@ -5,6 +5,7 @@ deployment:
   beta:
     branch: master
     commands:
+      - npm run revision
       - rm -r node_modules
       - NODE_ENV=production npm install
       - git add -f node_modules/ cdn/
