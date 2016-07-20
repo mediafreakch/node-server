@@ -19,3 +19,6 @@ You can put all your environment variables into a `.env` file.
 # Test
 
 To run the tests, run `npm test`.
+
+# Live
+https://frontend-prototyping-beta-ricardo.eu-west-1.elasticbeanstalk.com/

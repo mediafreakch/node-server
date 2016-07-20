@@ -9,8 +9,8 @@
     "revision": "nf run node ./revision.js",
     "release": "npm run clean && npm run build && npm run revision",
     "watch": "watchify -v -d src/index.js -o dist/build.js",
-    "start": "npm run revision && nf start",
-    "postinstall": "if [ $BUILD_AFTER_INSTALL ]; then npm run build; fi",
+    "start": "nf start",
+    "pretest": "npm run release",
     "test": "echo \"No test specified. Continue anyway\" && exit 0"
   },
   "license": "MIT",

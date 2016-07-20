@@ -1,7 +1,7 @@
 var throng = require('throng');
 
 var WORKERS = process.env.WEB_CONCURRENCY || 1;
-var PORT = process.env.SERVER_PORT || 3000;
+var PORT = process.env.PORT || 3000;
 var RELEASE_DIR = process.env.NODE_ENV === 'production' ? 'cdn' : 'dist';
 
 // app clustering
