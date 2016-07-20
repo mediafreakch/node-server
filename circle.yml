@@ -7,5 +7,5 @@ deployment:
     commands:
       - rm -r node_modules
       - NODE_ENV=production npm install
-      - git add node_modules/ cdn/
+      - git add -f node_modules/ cdn/
       - eb deploy --profile default --staged --debug -v
