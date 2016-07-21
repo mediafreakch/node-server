@@ -5,7 +5,7 @@ var PORT = process.env.PORT || 3000;
 var ENV = process.env.NODE_ENV;
 var STATIC = (ENV === 'production' ? '/cdn' : '/dist');
 
-// app clustering
+// allow app clustering
 throng({
   workers: WORKERS,
   lifetime: Infinity,
@@ -17,31 +17,41 @@ function startServer() {
       express = require('express'),
       debug = require('debug')('webapp'),
       jade = require('jade'),
+      expressHelpers = require('./utils/express-helpers'),
       app = express();
 
-  // precompile main template before any route hits
-  var mainTemplate = jade.compileFile(path.join(__dirname, 'index.jade'));
+  // register express helpers
+  // those will be exposed to the templating engine
+  app.locals.helpers = expressHelpers;
 
+  // warm up cache by precompiling jade templates
+  jade.compileFile(path.join(__dirname, '/views', '/index.jade'), { cache: true });
+
+  // configure the view engine
   app
-    .use('/static', express.static(__dirname + STATIC))
+    .set('view engine', 'jade')
+    .set('views', path.join(__dirname, '/views'));
+
+  // configure static asset directory
+  app
+    .use('/dist', express.static(__dirname + STATIC))
+
+  // configure routes
+  app
     .get('/', homeRoute)
+
+  // start the server
+  app
     .listen(PORT, onListen);
 
+  // Routes
   function homeRoute(req, res) {
     debug('Hit home route');
-    // this is the fastest way to render (using pre-compiled template)
-    res.send(mainTemplate());
+    res.render('index');
   }
 
   function onListen() {
     debug('server started on port ' + PORT);
     debug('Environment: ' + app.get('env') );
   }
-
-  // the following is way slower and happens synchronous on the first hit for a particular view
-  // app.set('view engine', 'jade');
-  // app.set('views', './src');
-  // app.get('/', function (req, res) {
-  //   res.render('index', { cdnBasePath: 'http://localhost:3000/dist/', file: 'build.min.js' });
-  // });
 }
