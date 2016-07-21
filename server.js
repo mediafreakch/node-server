@@ -34,11 +34,11 @@ function startServer() {
 
   // configure static asset directory
   app
-    .use('/dist', express.static(__dirname + STATIC))
+    .use(STATIC, express.static(__dirname + STATIC));
 
   // configure routes
   app
-    .get('/', homeRoute)
+    .get('/', homeRoute);
 
   // start the server
   app

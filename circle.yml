@@ -1,6 +1,8 @@
 dependencies:
   pre:
     - pip install awsebcli
+  post:
+    - npm run build
 deployment:
   beta:
     branch: master
@@ -8,5 +10,5 @@ deployment:
       - npm run revision
       - rm -r node_modules
       - NODE_ENV=production npm install
-      - git add -f node_modules/ cdn/
+      - git add -f node_modules/ cdn/ dist/
       - eb deploy --profile default --staged --debug -v

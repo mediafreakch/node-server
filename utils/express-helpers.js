@@ -1,11 +1,15 @@
 var readFile = require('fs').readFileSync,
-    exists = require('fs').access;
+    exists = require('fs').accessSync,
+    path = require('path'),
+    manifest = path.join(path.resolve('.'), 'dist/asset-manifest.json');
 
 // preload asset-manifest.json if exists
-try {
-  exists('dist/asset-manifest.json');
-  var assetMap = JSON.parse(readFile('dist/asset-manifest.json', 'utf-8'));
-} catch (e) { }
+if (process.env.NODE_ENV === 'production') {
+    try {
+    exists(manifest);
+    var assetMap = JSON.parse(readFile(manifest, 'utf-8'));
+  } catch (e) { }
+}
 
 module.exports = {
   asset: function(path) {
