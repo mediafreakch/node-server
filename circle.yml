@@ -1,3 +1,9 @@
+general:
+  artifacts:
+    - "coverage"
+  branches:
+    only:
+      - master
 dependencies:
   pre:
     - pip install awsebcli
@@ -6,6 +12,8 @@ dependencies:
 deployment:
   beta:
     branch: master
+    tag: /v[0-9]+(\.[0-9]+)*/
+    owner: mediafreakch
     commands:
       - npm run revision
       - rm -r node_modules
