@@ -1,6 +1,6 @@
 general:
   artifacts:
-    - "coverage"
+    - "coverage/"
   branches:
     only:
       - master
