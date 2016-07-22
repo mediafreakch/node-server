@@ -3,6 +3,7 @@
   <div id="content" class="row">
     <!-- // put your article-component here -->
     <h1>Hello world 2</h1>
+    <a href="/crash-me">Crash me</a>
   </div>
   <app-footer></app-footer>
 </template>

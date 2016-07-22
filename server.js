@@ -38,7 +38,8 @@ function startServer() {
 
   // configure routes
   app
-    .get('/', homeRoute);
+    .get('/', homeRoute)
+    .get('/crash-me', crashMe);
 
   // start the server
   app
@@ -48,6 +49,12 @@ function startServer() {
   function homeRoute(req, res) {
     debug('Hit home route');
     res.render('index');
+  }
+
+  function crashMe(req, res) {
+    // access undefined variable
+    foo.bar = 0;
+    res.send('uups');
   }
 
   function onListen() {
