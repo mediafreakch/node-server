@@ -11,7 +11,8 @@ dependencies:
     - npm run build
 deployment:
   beta:
-    tag: /v[0-9]+(\.[0-9]+)*/
+    tag: /[0-9]+(\.[0-9]+)*/
+    owner: mediafreakch
     commands:
       - rm -r node_modules
       - NODE_ENV=production npm install
