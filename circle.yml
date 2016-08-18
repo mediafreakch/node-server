@@ -7,6 +7,8 @@ general:
 dependencies:
   pre:
     - pip install awsebcli
+    - aws --version
+    - aws sts get-caller-identity
   post:
     - npm run build
 deployment:
