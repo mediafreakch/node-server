@@ -7,6 +7,7 @@ general:
 dependencies:
   pre:
     - pip install awsebcli
+    - pip install --upgrade botocore
     - aws --version
     - aws sts get-caller-identity
   post:
